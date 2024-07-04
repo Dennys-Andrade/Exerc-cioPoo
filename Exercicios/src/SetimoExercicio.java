@@ -6,12 +6,13 @@ public class SetimoExercicio {
         System.out.println("Digite uma frase: ");
         String frase = sc.nextLine();
 
-        String vogais = "aeiou";
+        String vogais = "aeiouàáâãéêíóôõúü";
         int contador = 0;
         for (int i = 0; i < frase.length(); i++) {
             if (vogais.contains(String.valueOf(frase.charAt(i)))) {
                 contador++;
             }
         }
+        System.out.println("O número de vogais é: " + contador);
     }
 }
